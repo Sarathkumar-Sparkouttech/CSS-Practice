@@ -1,0 +1,12 @@
+p{
+    background-color: lightgray;
+    background-image:url("image/wild-chamomile-meadow-32657963.webp");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-attachment:fixed;
+}
+h1{
+    color:#000000;
+    background-color:lightslategray
+}
