@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+.para1{
+    border: 1px solid rgb(239, 7, 7);
+    width:600%;
+    
+}
+.para2{
+    border: 1px solid rgb(135, 7, 239);
+    min-width:100px;
+}
+.para3{
+    border: 1px solid rgb(7, 239, 135);
+    max-width:200px;
+    max-height: 200px;
+}
+.para4{
+    border: 1px solid rgb(57, 239, 7);
+    height: 100px;
+
+}
+.para5{
+    border: 1px solid #8707ef;
+    min-height: 100px;
+}
+.para6{
+    border: 1px solid #ef0707;
+    max-height: 100px;
+}
