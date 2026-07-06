@@ -8,6 +8,8 @@
     max-width: 300%;
      height: 200px;
      box-sizing: border-box;
+     border-radius: 100%;
+     border: none;
 }
 .img2{
     border-radius: 10px;
@@ -17,4 +19,7 @@
     max-width: 300%;
      height: 200px;
      box-sizing: border-box;
+     border-radius: 100px;
+     border: none;
 }
+
