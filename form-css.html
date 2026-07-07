@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .container{
+            background-color: #f1f1f1;
+            width: 500px;
+            padding: 20px;
+            margin: 50px;
+            border-bottom-right-radius: 100px;
+            border-top-left-radius: 100px;
+            box-shadow: 2px 2px 21px;
+        }
+        label{
+            font-size: 1.5rem;
+        }
+        h1{
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .input-group{
+            padding: 8px;
+            font-weight: 2.5rem;
+            text-transform: capitalize;
+            margin-top: 10px;
+        }
+        .text{
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border: 1px solid;
+            cursor: pointer;
+        }
+        .text:focus{
+            border: thick red solid;
+            outline: none;
+        }
+        .radio{
+            text-transform: capitalize;
+            padding:20px;
+        }
+        button{
+            width: 100%;
+            background-color: coral;
+            padding: 10px;
+            border: none;
+            font-size: 1.5rem;
+        }
+        button:hover{
+            background-color: blueviolet;
+        }
+        .abc{
+            text-align: center;
+            margin: 20px;
+            color: blueviolet;
+            font-size:1.5rem;
+        }
+        .radio:checked{
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <h1>REGISTRATION FORM</h1>
+            <div class="input-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fmane" placeholder="Enter your name" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="enter your  name" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="enter your pass" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="pass">Conform Password:</label>
+                <input type="password" id="pass" name="pass" placeholder="enter your pass" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="phone"> Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="dob">DOB:</label>
+                <input type="date" id="dob" name="dob" placeholder="enter your DOB" class="text" required>
+            </div>
+            <div class="input-group">
+                <label for="cont">Country:</label>
+                <input list="country" id="cont" name="cont" placeholder="enter your pass" class="text" required>
+                <datalist id="country">
+                    <option value="india"></option>
+                    <option value="us"></option>
+                    <option value="sri lanka"></option>
+                    <option value="indo"></option>
+                </datalist>
+            </div>
+            <div class="input-group">
+                <label>Gender:</label>
+                <input type="radio" id="female" name="genter" value="female" class="radio" required>
+                <label for="female">Female</label>
+                <input type="radio" id="male" name="genter" class="radio" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="others" name="genter" class="radio" value="others" required>
+                <label for="others">Others</label>
+            </div>
+            <div class="input-group">
+                <input type="checkbox" id="check" name="check" value="terms"  class="radio" required>
+                <label for="check">I agre the <a href="#">terms and contions !</a> </label>
+            </div>
+            <div class="input-group">
+                <button>Register</button>
+            </div>
+            <div class="abc">Or</div>
+            <div class="abc">I Have all ready aocc <a href="#">sign hear !</a></div>
+        </form>
+    </div>
+</body>
+
+</html>

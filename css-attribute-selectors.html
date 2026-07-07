@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Attribute-Selector</title>
+    <style>
+        a[href] {
+            color: red;
+            display: block;
+        }
+
+        p[title] {
+            background-color: aquamarine;
+        }
+
+        p[class="para1"] {
+            background-color: rgb(255, 0, 106);
+        }
+
+        p[class~="siva"] {
+            background-color: blueviolet;
+        }
+
+        p[lang|="en"] {
+            color: red;
+            display: block;
+        }
+        h2[class*="sarath"]{
+            color: blue;
+        }
+        h2[title$="kumar"]{
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Attribute-selectors-->
+    <div>
+        <a href="#">Home</a>
+        <a href="#">sarath</a>
+        <a href="#">kumar</a>
+        <a>home</a>
+    </div>
+    <hr>
+    <div>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde?</p>
+        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde?</p>
+        <p title="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde?</p>
+        <p title="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, unde?</p>
+    </div>
+    <hr>
+    <div>
+        <p class="para1">Lorem ipsum dolor sit amet.</p>
+        <p class="para2">Lorem ipsum dolor sit amet.</p>
+        <p class="para1">Lorem ipsum dolor sit amet.</p>
+        <p class="para2">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <hr>
+    <div>
+        <p class="sarath">Lorem ipsum dolor sit.</p>
+        <p class="siva">Lorem ipsum dolor sit.</p>
+        <p class="sarath">Lorem ipsum dolor sit.</p>
+        <p class="siva">Lorem ipsum dolor sit.</p>
+    </div>
+    <hr>
+    <div>
+        <p lang="en">english</p>
+        <p lang="en-us">American english</p>
+        <p lang="fr">franch</p>
+
+    </div><hr>
+    <div>
+        <h2 class="sarath">sarath</h2>
+        <h2 class="kumar">kumar</h2>
+        <h2 class="sivakumar">sivakumar</h2>
+        <h2 class="sarathkumar">sarathkumar</h2>
+    </div><hr>
+     <div>
+        <h2 title="sarath">sarath</h2>
+        <h2 title="siva">kumar</h2>
+        <h2 title="sivakumar">sivakumar</h2>
+        <h2 title="sarankumar">sarathkumar</h2>
+    </div><hr>
+
+
+
+</body>
+
+</html>
