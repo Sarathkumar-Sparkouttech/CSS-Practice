@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-image: linear-gradient(rgb(119, 113, 119), rgb(228, 170, 170));
+    font-family: "Oswald", sans-serif;
+    min-height: 100vh;
+    padding: 10px;
+    margin: 10px;
+}
+.container{
+    background-image: radial-gradient(rgb(30, 242, 235), rgb(158, 244, 158));
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:20px;
+
+}

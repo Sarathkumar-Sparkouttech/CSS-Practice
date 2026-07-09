@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-image: linear-gradient(rgb(132, 119, 119),rgb(137, 225, 228));
+            height: 100vh;
+        }
+        .layout{
+            background-image: linear-gradient(rgb(149, 224, 149),rgb(245, 134, 134));
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr  ;
+            grid-template-rows: 10vh 10vh 70vh 10vh;
+            grid-template-areas: 
+            "h h h h h"
+            "n n n n n "
+            "s m m m a"
+            "f f f f f";
+            margin: 5px;
+        }
+        .layout div{
+            display: grid;
+            justify-content: center;
+            border: 1px solid black;
+            align-items: center;
+            
+        }
+        .header{
+            grid-area: h;
+        }
+        .navbar{
+grid-area: n;
+        }
+        .secetion{
+grid-area: s;
+        }
+        
+        .main{
+grid-area: m;
+        }
+        .aside{
+grid-area: a;
+        }
+        .footer{
+grid-area: f;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="layout">
+        <div class="header">heade</div>
+        <div class="navbar">navbar</div>
+        <div class="secetion">secetion</div>
+        <div class="main">main</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+
+    </div>
+</body>
+
+</html>
