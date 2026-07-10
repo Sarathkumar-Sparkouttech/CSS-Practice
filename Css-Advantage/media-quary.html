@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* max-width use pannumpothu*/
+    div{
+        background-color: black;
+        height: 100px;
+    
+        
+          @media screen and ( max-width:900px){
+         div{
+            background-color: rgb(33, 18, 199);
+         }   
+        }
+            }
+          @media screen and ( max-width:700px){
+         div{
+            background-color: rgb(27, 176, 222);
+         } 
+        }       
+        @media screen and ( max-width:600px){
+         div{
+            background-color: red;
+         }  
+        } 
+        /*Min-Width use pannumpothu*/
+        h1{
+            background-color: blue;
+            height: 100px;
+        }
+          @media screen and ( min-width:600px){
+         h1{
+            background-color: red;
+         }  
+        } 
+          @media screen and ( min-width:800px){
+         h1{
+            background-color: rgb(119, 246, 8);
+         }  
+        }
+          @media screen and ( min-width:1000px){
+         h1{
+            background-color: red;
+         }  
+        }  
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <h1></h1>
+</body>
+</html>
