@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-image: linear-gradient(rgb(218, 114, 114), rgb(85, 85, 177));
+            height: 100vh;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+
+            /* justify-content: center;
+            align-items: center; */
+
+
+
+        }
+
+        .container div {
+            background-color: aquamarine;
+            height: 100px;
+            text-align: center;
+            padding-top: 50px;
+
+        }
+
+        .c1 {
+            grid-column: span 3;
+
+
+        }
+
+        .c2 {
+            grid-column: span 3;
+
+        }
+
+        .c3 {
+            grid-column: span 2;
+
+        }
+
+        .c6 {
+            grid-column: span 2;
+
+        }
+
+        .c9 {
+            grid-column: span 3;
+
+        }
+
+        .c8 {
+            grid-column: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="c1">1</div>
+        <div class="c2">2</div>
+        <div class="c3">3</div>
+        <div class="c4">4</div>
+        <div class="c5">5</div>
+        <div class="c6">6</div>
+        <div class="c7">7</div>
+        <div class="c8">8</div>
+        <div class="c9">9</div>
+    </div>
+
+</body>
+
+</html>
